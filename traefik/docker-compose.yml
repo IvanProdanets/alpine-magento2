@@ -2,7 +2,7 @@ version: '3'
 
 services:
   reverse-proxy:
-     image: traefik
+     image: traefik:1.7.2
      command: --api --docker
      command: --configFile=/traefik.toml
      networks:
